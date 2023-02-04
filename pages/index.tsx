@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Login from './auth/Login'
-import Register from './auth/Register'
+import Login from './auth/login'
+import Register from './auth/register'
 import HomeScreen from '../components/Home'
 
 export default function Home() {

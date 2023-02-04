@@ -26,7 +26,11 @@ const Navbar = () => {
             <Link href=''>Contact Us</Link>
           </li>
           <li>
-            <button className='bg-white text-black py-1 px-4 rounded'>Sign In</button>
+            <Link href='/auth/Login'>
+              <button className='bg-white text-black py-1 px-4 rounded'>
+                Sign In
+              </button>
+            </Link>
           </li>
         </ul>
       </div>
