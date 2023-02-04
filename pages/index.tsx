@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Login from './auth/Login'
 import Register from './auth/Register'
 
 export default function Home() {
@@ -13,7 +14,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <main>
-        <Register />
+        {/* <Register /> */}
+        <Login />
       </main>
     </>
   )

@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
-import Svg from '../../public/assets/register.svg'
+import Svg from '../../public/assets/login.svg'
 import Logo from '../../public/assets/logo.svg'
 import Link from 'next/link'
 
-const Register = () => {
+const Login = () => {
   return (
     <div className='flex h-screen'>
       {/* left screen */}
@@ -22,8 +22,8 @@ const Register = () => {
             </p>
           </div>
           <div className='text-center my-2'>
-            <p className='text-pryBlue text-3xl'>Create your Termstree Account</p>
-            <p className='my-3'>Sign up now and proceed to terms generation</p>
+            <p className='text-pryBlue text-3xl'>Welcome Back</p>
+            <p className='my-3'>Sign in to manange to T&C generaation</p>
           </div>
           <form action="" className='flex flex-col gap-6 '>
             <div>
@@ -35,18 +35,23 @@ const Register = () => {
               <input type="text" name="password" id="password" className='w-full border p-3 rounded mt-3' />
             </div>
             {/* checkbox */}
-            <div className='flex items-center'>
-              <input type="checkbox" name="" id="" />
-              <span className='ml-3'>I agree to the terms of services and private policy </span>
+            <div className='flex items-center justify-between'>
+              <div>
+                <input type="checkbox" name="" id="" />
+                <span className='ml-3'>Remember me</span>
+              </div>
+              <div>
+                <Link href=''>Forgot Password?</Link>
+              </div>
             </div>
             <button className='rounded p-3 cursor-pointer w-full bg-pryBlue text-white'>
-              Sign Up
+              Sign In
             </button>
           </form>
           <div className='text-center mt-10'>
-            Already have an account?
+            Do not have an account?
             {" "}
-            <Link href="/">Sign In</Link>
+            <Link href="/">Sign Up</Link>
           </div>
           <div className='flex items-center my-10'>
             <div className='bg-gray-500 w-1/2 rounded-xl' style={{ height: 2 }} />
@@ -54,7 +59,7 @@ const Register = () => {
             <div className='bg-gray-500 w-1/2 rounded-xl' style={{ height: 2 }} />
           </div>
           <button className='border-2 border-gray-500 w-full hover:border-pryBlue rounded p-3 cursor-pointer hover:bg-pryBlue hover:text-white'>
-            Sign Up with Google
+            Sign In with Google
           </button>
         </div>
       </div>
@@ -62,4 +67,4 @@ const Register = () => {
   )
 }
 
-export default Register
+export default Login
