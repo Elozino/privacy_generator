@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Login from './auth/Login'
 import Register from './auth/Register'
+import HomeScreen from '../components/Home'
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       </Head>
       <main>
         {/* <Register /> */}
-        <Login />
+        {/* <Login /> */}
+        <HomeScreen />
       </main>
     </>
   )
