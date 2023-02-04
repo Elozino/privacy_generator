@@ -26,7 +26,7 @@ const Navbar = () => {
             <Link href=''>Contact Us</Link>
           </li>
           <li>
-            <button>Sign In</button>
+            <button className='bg-white text-black py-1 px-4 rounded'>Sign In</button>
           </li>
         </ul>
       </div>
