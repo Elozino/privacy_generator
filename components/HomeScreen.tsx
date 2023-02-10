@@ -1,4 +1,4 @@
-import { features, services } from '@/constants/data'
+import { features, services, testimonials } from '@/constants/data'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -119,6 +119,21 @@ const HomeScreen = () => {
             <div className='lg:w-1/3'>
               <Image src={tcImg} alt='' />
             </div>
+          </div>
+        </section>
+        <section className='px-32 my-32'>
+          <div className='mb-5'>
+            <h2 className='font-medium text-3xl text-center'>What our Clients {' '}
+              <span className='text-pryBlue'>Are Saying</span>
+            </h2>
+          </div>
+          <div className='grid grid-cols-4 gap-5 mt-20'>
+            {testimonials.map((item, index) => (
+              <div key={index} className='bg-pryBlue rounded-lg p-5 pt-10 lg:p-10 relative'>
+                <Image src={item.testifier} alt='' width={60} height={60} className='rounded-full absolute -top-7 left-1/2 -translate-x-1/2' style={{left: '50%'}} />
+                <p>{item.testimony}</p>
+              </div>
+            ))}
           </div>
         </section>
       </main>

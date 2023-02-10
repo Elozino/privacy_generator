@@ -43,3 +43,27 @@ export const features = [
     desc: "At Termstree we are constantly working to improve your experience keeping you up to speed about new updates and developments.",
   },
 ];
+
+import img1 from '/public/assets/client1.jpg'
+import img2 from '/public/assets/client2.jpg'
+import img3 from '/public/assets/client3.jpg'
+import img4 from '/public/assets/client4.jpg'
+
+export const testimonials = [
+  {
+    testimony: "\"Generating our    Privacy Policies that is something important to be considered on any business security.\”",
+    testifier: img1,
+  },
+  {
+    testimony: "\"The fact that lets us create premium custom legal agreements that can be legally binding for my users.\”",
+    testifier: img2,
+  },
+  {
+    testimony: "\"It s fast to create privacy policy, you just need an e-mail and give yours sites name and address.\”",
+    testifier: img3,
+  },
+  {
+    testimony: "\"The best thing in this tool is the fact that we don't have to worry about different privacy laws.\"",
+    testifier: img4,
+  },
+];
