@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         pryBlue: "#6C63FF",
+        pryYellow:'#FFD05B',
       },
     },
   },
