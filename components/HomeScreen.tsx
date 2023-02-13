@@ -68,7 +68,7 @@ const HomeScreen = () => {
                 <p className='mt-2'>{item.desc}</p>
               </div>
             ))}
-            <div className='text-center'>
+            <div className='text-center mt-6'>
               <button className='bg-pryYellow py-2 px-6 rounded-xl'>Learn More</button>
             </div>
           </div>
