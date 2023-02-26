@@ -26,7 +26,7 @@ const Navbar = () => {
             <Link href=''>Contact Us</Link>
           </li>
           <li>
-            <Link href='/auth/Login'>
+            <Link href='/auth/login'>
               <button className='bg-white text-black py-1 px-4 rounded'>
                 Sign In
               </button>

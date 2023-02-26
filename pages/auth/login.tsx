@@ -50,7 +50,7 @@ const Login = () => {
                   <span className='ml-3'>Remember me</span>
                 </div>
                 <div>
-                  <Link href=''>Forgot Password?</Link>
+                  <Link href=''>Forgot Password ?</Link>
                 </div>
               </div>
               <button className='rounded p-3 cursor-pointer w-full bg-pryBlue text-white'>
