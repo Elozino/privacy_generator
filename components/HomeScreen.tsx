@@ -142,10 +142,12 @@ const HomeScreen = () => {
           </div>
         </section>
         {/* logos */}
-        <section className='flex justify-between px-16 lg:px-32 mb-10'>
-          {logo.map((item, index) => (
-            <Image src={item} key={index} alt={item + 'logo'} width={80}/>
-          ))}
+        <section className='flex justify-center items-center mb-10'>
+          <div className='flex justify-between w-2/3'>
+            {logo.map((item, index) => (
+              <Image src={item} key={index} alt={item + 'logo'} width={80} />
+            ))}
+          </div>
         </section>
       </main>
       <Footer />
