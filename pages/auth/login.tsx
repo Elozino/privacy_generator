@@ -32,7 +32,7 @@ const Login = () => {
             </div>
             <div className='text-center my-2'>
               <p className='text-pryBlue text-3xl'>Welcome Back</p>
-              <p className='my-3'>Sign in to manange to T&C generaation</p>
+              <p className='my-3'>Sign in to manage to T&C generation</p>
             </div>
             <form action="" className='flex flex-col gap-6 '>
               <div>
