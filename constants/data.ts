@@ -44,26 +44,38 @@ export const features = [
   },
 ];
 
-import img1 from '/public/assets/client1.jpg'
-import img2 from '/public/assets/client2.jpg'
-import img3 from '/public/assets/client3.jpg'
-import img4 from '/public/assets/client4.jpg'
+import img1 from "/public/assets/client1.jpg";
+import img2 from "/public/assets/client2.jpg";
+import img3 from "/public/assets/client3.jpg";
+import img4 from "/public/assets/client4.jpg";
+import logo1 from "/public/assets/Volkswagen_logo.svg";
+import logo2 from "/public/assets/armani-logo.png";
+import logo3 from "/public/assets/walmart.svg";
+import logo4 from "/public/assets/mercedes.svg";
+import logo5 from "/public/assets/Disney+_logo.svg";
+import logo6 from "/public/assets/Dhl.png";
 
 export const testimonials = [
   {
-    testimony: "\"Generating our    Privacy Policies that is something important to be considered on any business security.\”",
+    testimony:
+      '"Generating our    Privacy Policies that is something important to be considered on any business security.”',
     testifier: img1,
   },
   {
-    testimony: "\"The fact that lets us create premium custom legal agreements that can be legally binding for my users.\”",
+    testimony:
+      '"The fact that lets us create premium custom legal agreements that can be legally binding for my users.”',
     testifier: img2,
   },
   {
-    testimony: "\"It s fast to create privacy policy, you just need an e-mail and give yours sites name and address.\”",
+    testimony:
+      '"It s fast to create privacy policy, you just need an e-mail and give yours sites name and address.”',
     testifier: img3,
   },
   {
-    testimony: "\"The best thing in this tool is the fact that we don't have to worry about different privacy laws.\"",
+    testimony:
+      '"The best thing in this tool is the fact that we don\'t have to worry about different privacy laws."',
     testifier: img4,
   },
 ];
+
+export const logo = [logo1, logo2, logo3, logo4, logo5, logo6];

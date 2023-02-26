@@ -1,4 +1,4 @@
-import { features, services, testimonials } from '@/constants/data'
+import { features, logo, services, testimonials } from '@/constants/data'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -22,7 +22,7 @@ const HomeScreen = () => {
       </Head>
       <Navbar />
       <main>
-        <section className='flex flex-col lg:flex-row px-32 h-screen items-center lg:justify-between justify-evenly'>
+        <section className='flex flex-col lg:flex-row px-16 lg:px-32 h-screen items-center lg:justify-between justify-evenly'>
           <div className='lg:w-1/2 grid gap-5'>
             <h1 className='text-3xl lg:text-6xl lg:leading-tight lg:w-2/3 font-bold'>
               One Stop Privacy
@@ -40,7 +40,7 @@ const HomeScreen = () => {
           </div>
         </section>
         {/* Our Services */}
-        <section className='mb-20'>
+        <section className='mb-20 px-16'>
           <h2 className='font-medium text-center text-3xl mb-10'>Our Services</h2>
           <div className='grid md:grid-cols-3 gap-10 lg:px-32'>
             {services.map((item, index) => (
@@ -54,7 +54,7 @@ const HomeScreen = () => {
           </div>
         </section>
         {/* Features that Aid Your Business Requirements */}
-        <section className='px-32 mb-10'>
+        <section className='px-16 lg:px-32 mb-10'>
           <div className='mb-5 grid place-items-center'>
             <h2 className='font-medium text-3xl text-center'>
               Features that Aid Your {" "}
@@ -76,7 +76,7 @@ const HomeScreen = () => {
           </div>
         </section>
         {/* Why you need a Privacy Policy Statement? */}
-        <section className='px-32 my-32'>
+        <section className='px-16 lg:px-32 my-32'>
           <div className='mb-5'>
             <h2 className='font-medium text-3xl text-center'>Why you need a {' '}
               <span className='text-pryBlue'>Privacy Policy Statement?</span>
@@ -100,7 +100,7 @@ const HomeScreen = () => {
           </div>
         </section>
         {/* Why you need a Terms and Condition Statement? */}
-        <section className='px-32 py-32 bg-pryBlue text-white'>
+        <section className='px-16 lg:px-32 py-32 bg-pryBlue text-white'>
           <div className='mb-5'>
             <h2 className='font-medium text-3xl text-center'>Why you need a Terms and Condition Statement?</h2>
           </div>
@@ -125,7 +125,8 @@ const HomeScreen = () => {
             </div>
           </div>
         </section>
-        <section className='px-32 my-32'>
+        {/* What our Clients Are Saying */}
+        <section className='px-16 lg:px-32 my-32'>
           <div className='mb-5'>
             <h2 className='font-medium text-3xl text-center'>What our Clients {' '}
               <span className='text-pryBlue'>Are Saying</span>
@@ -134,11 +135,17 @@ const HomeScreen = () => {
           <div className='grid grid-cols-4 gap-5 mt-20'>
             {testimonials.map((item, index) => (
               <div key={index} className='bg-pryBlue rounded-lg p-5 pt-10 lg:p-10 relative'>
-                <Image src={item.testifier} alt='' width={60} height={60} className='rounded-full absolute -top-7 left-1/2 -translate-x-1/2' style={{left: '50%'}} />
+                <Image src={item.testifier} alt='' width={60} height={60} className='rounded-full absolute -top-7 left-1/2 -translate-x-1/2' style={{ left: '50%' }} />
                 <p>{item.testimony}</p>
               </div>
             ))}
           </div>
+        </section>
+        {/* logos */}
+        <section className='flex justify-between px-16 lg:px-32 mb-10'>
+          {logo.map((item, index) => (
+            <Image src={item} key={index} alt={item + 'logo'} width={80}/>
+          ))}
         </section>
       </main>
       <Footer />
