@@ -22,26 +22,27 @@ const HomeScreen = () => {
       </Head>
       <Navbar />
       <main>
-        <section className='flex px-32 h-screen items-center justify-between'>
-          <div className='w-1/2'>
-            <h1 className='lg:text-6xl lg:leading-tight lg:w-2/3 font-bold'>
+        <section className='flex flex-col lg:flex-row px-32 h-screen items-center lg:justify-between justify-evenly'>
+          <div className='lg:w-1/2 grid gap-5'>
+            <h1 className='text-3xl lg:text-6xl lg:leading-tight lg:w-2/3 font-bold'>
               One Stop Privacy
               Policy Generator
             </h1>
             <p className='lg:my-16 w-2/3 text-xl'>
               Termstree is an easy to use, powerful tool that allows you to generate terms and conditions for your blog or website. Generate net-friendly Privacy Policies in a few minutes with no design knowledge required.
             </p>
-            <button className='bg-pryYellow py-2 px-14 rounded'>
+            <button className='bg-pryYellow py-2 px-14 rounded w-fit'>
               <Link href=''> Get Started</Link>
             </button>
           </div>
-          <div className='w-1/2'>
+          <div className='lg:w-1/2'>
             <Image src={laptop} alt='' />
           </div>
         </section>
+        {/* Our Services */}
         <section className='mb-20'>
           <h2 className='font-medium text-center text-3xl mb-10'>Our Services</h2>
-          <div className='grid lg:grid-cols-3 gap-10 lg:px-32'>
+          <div className='grid md:grid-cols-3 gap-10 lg:px-32'>
             {services.map((item, index) => (
               <div key={index} className=''>
                 <div className='bg-pryBlue text-center rounded-xl py-5 shadow-lg'>
@@ -52,13 +53,14 @@ const HomeScreen = () => {
             ))}
           </div>
         </section>
+        {/* Features that Aid Your Business Requirements */}
         <section className='px-32 mb-10'>
           <div className='mb-5 grid place-items-center'>
             <h2 className='font-medium text-3xl text-center'>
               Features that Aid Your {" "}
               <span className='text-pryBlue'>Business Requirements</span>
             </h2>
-            <p className='my-5 w-1/3 text-center'>We know what your business requires to achieve its goals, hence our
+            <p className='my-5 lg:w-1/3 text-center'>We know what your business requires to achieve its goals, hence our
               flexible features to help you achieve your ultimate business goals </p>
           </div>
           <div className='grid place-content-center'>
@@ -73,6 +75,7 @@ const HomeScreen = () => {
             </div>
           </div>
         </section>
+        {/* Why you need a Privacy Policy Statement? */}
         <section className='px-32 my-32'>
           <div className='mb-5'>
             <h2 className='font-medium text-3xl text-center'>Why you need a {' '}
@@ -80,7 +83,7 @@ const HomeScreen = () => {
             </h2>
           </div>
           <div className='lg:flex justify-center mt-10'>
-            <div className='lg:w-1/3'>
+            <div className='flex justify-center mb-10 lg:w-1/3'>
               <Image src={policyImg} alt='' />
             </div>
             <div className='lg:w-1/3'>
@@ -96,6 +99,7 @@ const HomeScreen = () => {
             </div>
           </div>
         </section>
+        {/* Why you need a Terms and Condition Statement? */}
         <section className='px-32 py-32 bg-pryBlue text-white'>
           <div className='mb-5'>
             <h2 className='font-medium text-3xl text-center'>Why you need a Terms and Condition Statement?</h2>
@@ -116,7 +120,7 @@ const HomeScreen = () => {
                 you may refer to the in your terms and condition.
               </p>
             </div>
-            <div className='lg:w-1/3'>
+            <div className='lg:w-1/3 flex justify-center mt-10'>
               <Image src={tcImg} alt='' />
             </div>
           </div>
